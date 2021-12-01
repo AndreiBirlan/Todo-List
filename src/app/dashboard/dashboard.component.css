@@ -1,0 +1,19 @@
+img {
+  width: 100px;
+  border-radius: 5%;
+}
+
+.centeredImage {
+  display: block;
+  margin-left: 40%;
+  margin-right: 50%;
+  padding-top: 20px;
+}
+
+mat-card {
+  width: 400px;
+}
+
+.content {
+  padding: 10px;
+}

@@ -1,0 +1,14 @@
+<div class="content">
+  <mat-grid-list cols="5" rowHeight="240">
+    <mat-grid-tile *ngFor=" let coin of coins">
+      <mat-card>
+        <div class="centeredImage">
+          <img mat-card-image src="{{ coin.image }}">
+        </div>
+        <mat-card-content><p>{{ coin.name }}</p></mat-card-content>
+        <mat-card-content><p>Current price: ${{ coin.current_price }}</p></mat-card-content>
+        <mat-card-content><p>Last updated: {{ coin.last_updated | date:'fullDate' }}</p></mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
